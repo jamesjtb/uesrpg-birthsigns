@@ -13,7 +13,20 @@ const BirthsignCard = (props: PropsWithChildren<BirthsignArchetypeProps>) => {
         <Card
             elevation={9}
             onClick={props.onClick}
-            sx={{ cursor: 'pointer', width: 'fit-content', ...props.sx }}
+            sx={{
+                cursor: 'pointer',
+                width: 'fit-content',
+                transition: 'all .2s ease',
+                '&:hover': {
+                    transform: 'translate3D(0,-1px,0) scale(1.03)',
+                    transition: 'all .2s ease',
+                },
+                '&:active': {
+                    transform: 'translate3D(0,-1px,0) scale(1.03)',
+                    transition: 'all .2s ease',
+                },
+                ...props.sx
+            }}
         >
             <CardContent>
                 {props.children}

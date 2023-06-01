@@ -43,8 +43,8 @@ const SelectBirthsign = () => {
                 {birthsignArchetypes.map(bsa => (
                     <Grid item xs={12} md={4}>
                         <BirthsignCard onClick={() => alert(`${bsa.displayName} selected`)} sx={{maxWidth: '100%', minHeight: '100%'}}>
-                            <img style={{maxWidth: '100%'}} src={bsa.img} alt={bsa.displayName} />
                             <Typography variant="h3">{bsa.displayName}</Typography>
+                            <img style={{maxWidth: '100%'}} src={bsa.img} alt={bsa.displayName} />
                         </BirthsignCard>
                     </Grid>
                 ))}
