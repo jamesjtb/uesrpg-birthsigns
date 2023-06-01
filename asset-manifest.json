@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/uesrpg-birthsigns/static/css/main.27613972.css",
-    "main.js": "/uesrpg-birthsigns/static/js/main.a073317f.js",
+    "main.js": "/uesrpg-birthsigns/static/js/main.9f8ba51e.js",
     "static/js/787.f205b07f.chunk.js": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js",
     "static/media/background.jpg": "/uesrpg-birthsigns/static/media/background.140dff8d0db9663d8299.jpg",
     "static/media/vollkorn-sc-latin-ext-900-normal.woff2": "/uesrpg-birthsigns/static/media/vollkorn-sc-latin-ext-900-normal.2d814b294cdac78c5b6b.woff2",
@@ -46,11 +46,11 @@
     "static/media/vollkorn-sc-vietnamese-400-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-sc-vietnamese-400-normal.708457cb928604c58c0d.woff",
     "index.html": "/uesrpg-birthsigns/index.html",
     "main.27613972.css.map": "/uesrpg-birthsigns/static/css/main.27613972.css.map",
-    "main.a073317f.js.map": "/uesrpg-birthsigns/static/js/main.a073317f.js.map",
+    "main.9f8ba51e.js.map": "/uesrpg-birthsigns/static/js/main.9f8ba51e.js.map",
     "787.f205b07f.chunk.js.map": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27613972.css",
-    "static/js/main.a073317f.js"
+    "static/js/main.9f8ba51e.js"
   ]
 }
