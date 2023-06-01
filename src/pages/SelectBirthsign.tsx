@@ -2,9 +2,13 @@ import React from 'react';
 import ContentCard from '../components/ContentCard';
 import { Typography, Grid } from '@mui/material';
 import BirthsignCard from '../components/BirthsignCard';
+import warriorImg from '../assets/birthsign-images/warrior.jpg';
+import mageImg from '../assets/birthsign-images/mage.jpg';
+import thiefImg from '../assets/birthsign-images/thief.jpg';
+
 
 interface birthsignArchetype {
-    imgSrc: string;
+    img: string;
     displayName: string;
     key: string;
     birthsigns: string[];
@@ -12,19 +16,19 @@ interface birthsignArchetype {
 
 const birthsignArchetypes: birthsignArchetype[] = [
     {
-        imgSrc: '/images/warrior.jpg',
+        img: warriorImg,
         displayName: 'The Warrior',
         key: 'warrior',
         birthsigns: ['warrior', 'lady', 'steed', 'lord']
     },
     {
-        imgSrc: '/images/mage.jpg',
+        img: mageImg,
         displayName: 'The Mage',
         key: 'mage',
         birthsigns: ['mage', 'apprentice', 'atronach', 'ritual']
     },
     {
-        imgSrc: '/images/thief.jpg',
+        img: thiefImg,
         displayName: 'The Thief',
         key: 'thief',
         birthsigns: ['thief', 'lover', 'shadow', 'tower']
@@ -37,9 +41,9 @@ const SelectBirthsign = () => {
             <Typography color='primary' variant='h2'>Choose Your Birthsign Archetype</Typography>
             <Grid container spacing={2}>
                 {birthsignArchetypes.map(bsa => (
-                    <Grid item xs={4}>
+                    <Grid item xs={12} md={4}>
                         <BirthsignCard onClick={() => alert(`${bsa.displayName} selected`)} sx={{maxWidth: '100%', minHeight: '100%'}}>
-                            <img style={{maxWidth: '100%'}} src={bsa.imgSrc} alt={bsa.displayName} />
+                            <img style={{maxWidth: '100%'}} src={bsa.img} alt={bsa.displayName} />
                             <Typography variant="h3">{bsa.displayName}</Typography>
                         </BirthsignCard>
                     </Grid>
