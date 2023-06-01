@@ -1,6 +1,6 @@
 body {
   background-image: url("./assets/background.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 130vh;
   background-color: black;
 }
