@@ -10,9 +10,9 @@ const SelectBirthsign = () => {
             <Typography variant="h2">
                 Choose Your Birthsign Archetype
             </Typography>
-            <Grid container spacing={6}>
+            <Grid container spacing={3}>
                 {birthsignArchetypes.map(bsa => (
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} key={bsa.key}>
                         <BirthsignCard
                             img={bsa.img}
                             displayName={bsa.displayName}

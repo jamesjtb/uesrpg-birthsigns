@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 
 const ContentCard = (props: PropsWithChildren) => {
     return (
-        <Card sx={{ width: '70%', margin: 'auto', mt: '5%', textAlign: 'center', pt: '40px', pb: '40px' }}>
+        <Card sx={{ width: '70%', margin: 'auto', mt: '2%', textAlign: 'center' }}>
             <CardContent>
                 {props.children}                
             </CardContent>
