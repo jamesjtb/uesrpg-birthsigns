@@ -7,7 +7,7 @@ import birthsignArchetypes from '../data/birthsign-archetypes';
 const SelectBirthsign = () => {
     return (
         <ContentCard>
-            <Typography color="primary" variant="h2">
+            <Typography variant="h2">
                 Choose Your Birthsign Archetype
             </Typography>
             <Grid container spacing={6}>
@@ -16,6 +16,7 @@ const SelectBirthsign = () => {
                         <BirthsignCard
                             img={bsa.img}
                             displayName={bsa.displayName}
+                            description={bsa.description}
                             onClick={() => alert(`${bsa.displayName} selected`)}
                             sx={{ maxWidth: '100%', minHeight: '100%' }}
                         />

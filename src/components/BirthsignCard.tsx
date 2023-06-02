@@ -33,14 +33,14 @@ const BirthsignCard = (props: BirthsignArchetypeProps) => {
                 ...props.sx,
             }}
         >
-            <CardContent>
-                <Typography variant="h3">{props.displayName}</Typography>
-            </CardContent>
             <CardMedia component="img" image={props.img} alt={props.displayName} />
+            <CardContent>
+                <Typography variant="h3" color="primary">{props.displayName}</Typography>
+            </CardContent>
             {props.description ? (
                 <CardContent>
                     <Typography variant="body1" color="initial">
-                        {props.description}
+                        <em>{props.description}</em>
                     </Typography>
                 </CardContent>
             ) : null}
