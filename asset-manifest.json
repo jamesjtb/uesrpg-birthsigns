@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/uesrpg-birthsigns/static/css/main.75392c15.css",
+    "main.css": "/uesrpg-birthsigns/static/css/main.58aaf58a.css",
     "main.js": "/uesrpg-birthsigns/static/js/main.8ab7e6b3.js",
     "static/js/787.f205b07f.chunk.js": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js",
-    "static/media/background.jpg": "/uesrpg-birthsigns/static/media/background.140dff8d0db9663d8299.jpg",
     "static/media/mage.jpg": "/uesrpg-birthsigns/static/media/mage.0544ab34f879e9da9199.jpg",
     "static/media/warrior.jpg": "/uesrpg-birthsigns/static/media/warrior.c4382705d8c36c3a3b70.jpg",
     "static/media/thief.jpg": "/uesrpg-birthsigns/static/media/thief.569759beb5575c608829.jpg",
@@ -48,12 +47,12 @@
     "static/media/vollkorn-sc-vietnamese-900-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-sc-vietnamese-900-normal.4724061a04f55ab4eae9.woff",
     "static/media/vollkorn-sc-vietnamese-400-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-sc-vietnamese-400-normal.708457cb928604c58c0d.woff",
     "index.html": "/uesrpg-birthsigns/index.html",
-    "main.75392c15.css.map": "/uesrpg-birthsigns/static/css/main.75392c15.css.map",
+    "main.58aaf58a.css.map": "/uesrpg-birthsigns/static/css/main.58aaf58a.css.map",
     "main.8ab7e6b3.js.map": "/uesrpg-birthsigns/static/js/main.8ab7e6b3.js.map",
     "787.f205b07f.chunk.js.map": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75392c15.css",
+    "static/css/main.58aaf58a.css",
     "static/js/main.8ab7e6b3.js"
   ]
 }
