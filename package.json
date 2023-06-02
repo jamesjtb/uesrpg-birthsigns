@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://jamesjtb.github.io/uesrpg-birthsigns",
   "dependencies": {
+    "@dice-roller/rpg-dice-roller": "^5.3.2",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fontsource/vollkorn": "^5.0.2",

@@ -36,7 +36,7 @@ theme.typography.h3 = {
     fontSize: '1.25rem',
     fontFamily: ['Vollkorn SC', 'sans-serif'].join(','),
     [theme.breakpoints.up('md')]: {
-        fontSize: '3rem',
+        fontSize: '2.5rem',
     },
 };
 
