@@ -1,13 +1,15 @@
-import React, { MouseEventHandler, PropsWithChildren } from 'react';
+import { SxProps, Typography } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { SxProps, Typography } from '@mui/material';
+import React, { MouseEventHandler } from 'react';
 
 interface BirthsignArchetypeProps {
     onClick: MouseEventHandler<HTMLDivElement>;
     img: string;
     displayName: string;
+    description?: string;
+    rule?: string;
     sx?: SxProps;
 }
 
@@ -28,19 +30,27 @@ const BirthsignCard = (props: BirthsignArchetypeProps) => {
                     transform: 'translate3D(0,-1px,0) scale(1.03)',
                     transition: 'all .2s ease',
                 },
-                ...props.sx
+                ...props.sx,
             }}
         >
-            <CardMedia
-                component="img"
-                image={props.img}
-                alt={props.displayName}
-            /> 
             <CardContent>
-                <Typography variant="h3">
-                    {props.displayName}
-                </Typography>
+                <Typography variant="h3">{props.displayName}</Typography>
             </CardContent>
+            <CardMedia component="img" image={props.img} alt={props.displayName} />
+            {props.description ? (
+                <CardContent>
+                    <Typography variant="body1" color="initial">
+                        {props.description}
+                    </Typography>
+                </CardContent>
+            ) : null}
+            {props.rule ? (
+                <CardContent>
+                    <Typography variant="body1" color="initial">
+                        {props.rule}
+                    </Typography>
+                </CardContent>
+            ) : null}
         </Card>
     );
 };
