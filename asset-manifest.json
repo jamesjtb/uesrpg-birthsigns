@@ -1,11 +1,20 @@
 {
   "files": {
     "main.css": "/uesrpg-birthsigns/static/css/main.50b0a9bf.css",
-    "main.js": "/uesrpg-birthsigns/static/js/main.590524af.js",
+    "main.js": "/uesrpg-birthsigns/static/js/main.c181cf88.js",
     "static/js/787.f205b07f.chunk.js": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js",
     "static/media/mage.jpg": "/uesrpg-birthsigns/static/media/mage.0544ab34f879e9da9199.jpg",
     "static/media/warrior.jpg": "/uesrpg-birthsigns/static/media/warrior.c4382705d8c36c3a3b70.jpg",
+    "static/media/atronach.jpg": "/uesrpg-birthsigns/static/media/atronach.4acb34492cc5cdcd78a0.jpg",
+    "static/media/ritual.jpg": "/uesrpg-birthsigns/static/media/ritual.e48ef41ac9ee2e4e1598.jpg",
+    "static/media/apprentice.jpg": "/uesrpg-birthsigns/static/media/apprentice.f303297d4005fb95daab.jpg",
+    "static/media/shadow.jpg": "/uesrpg-birthsigns/static/media/shadow.c56d21b397f48b167be5.jpg",
+    "static/media/lady.jpg": "/uesrpg-birthsigns/static/media/lady.cfa70082435b368efe68.jpg",
+    "static/media/lord.jpg": "/uesrpg-birthsigns/static/media/lord.2bfd8e780026c1557c2e.jpg",
+    "static/media/lover.jpg": "/uesrpg-birthsigns/static/media/lover.2b0ba1d7b2e340e8fa7d.jpg",
+    "static/media/tower.jpg": "/uesrpg-birthsigns/static/media/tower.2ef8075aaa5c736330d5.jpg",
     "static/media/thief.jpg": "/uesrpg-birthsigns/static/media/thief.569759beb5575c608829.jpg",
+    "static/media/steed.jpg": "/uesrpg-birthsigns/static/media/steed.407a5e53936e60a2bcd6.jpg",
     "static/media/vollkorn-latin-600-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-latin-600-normal.abc294576ee1e7eb5d6e.woff",
     "static/media/vollkorn-latin-700-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-latin-700-normal.a1ceefad72e671277454.woff",
     "static/media/vollkorn-latin-800-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-latin-800-normal.c9301547d513cdbfb1d9.woff",
@@ -120,11 +129,11 @@
     "static/media/vollkorn-vietnamese-400-normal.woff2": "/uesrpg-birthsigns/static/media/vollkorn-vietnamese-400-normal.4ee870ec43235094926f.woff2",
     "index.html": "/uesrpg-birthsigns/index.html",
     "main.50b0a9bf.css.map": "/uesrpg-birthsigns/static/css/main.50b0a9bf.css.map",
-    "main.590524af.js.map": "/uesrpg-birthsigns/static/js/main.590524af.js.map",
+    "main.c181cf88.js.map": "/uesrpg-birthsigns/static/js/main.c181cf88.js.map",
     "787.f205b07f.chunk.js.map": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.50b0a9bf.css",
-    "static/js/main.590524af.js"
+    "static/js/main.c181cf88.js"
   ]
 }

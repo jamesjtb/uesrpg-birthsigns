@@ -1,3 +1,29 @@
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/**
+ * @dice-roller/rpg-dice-roller - An advanced JS based dice roller that can roll various types of dice and modifiers, along with mathematical equations.
+ * 
+ * @version 5.3.2
+ * @license MIT
+ * @author GreenImp Media <info@greenimp.co.uk> (http://greenimp.co.uk)
+ * @link https://dice-roller.github.io/documentation
+ */
+
+/**
+ * @license Complex.js v2.1.1 12/05/2020
+ *
+ * Copyright (c) 2020, Robert Eisele (robert@xarg.org)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ **/
+
+/**
+ * @license Fraction.js v4.2.0 05/03/2022
+ * https://www.xarg.org/2014/03/rational-numbers-in-javascript/
+ *
+ * Copyright (c) 2021, Robert Eisele (robert@xarg.org)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ **/
+
 /**
  * @license React
  * react-dom.production.min.js
