@@ -2,6 +2,7 @@ import { SxProps, Typography } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
+import Divider from '@mui/material/Divider';
 import React, { MouseEventHandler } from 'react';
 
 interface BirthsignArchetypeProps {
@@ -35,17 +36,19 @@ const BirthsignCard = (props: BirthsignArchetypeProps) => {
         >
             <CardMedia component="img" image={props.img} alt={props.displayName} />
             <CardContent>
-                <Typography variant="h3" color="primary">{props.displayName}</Typography>
+                <Typography variant="h3" color="primary">
+                    {props.displayName}
+                </Typography>
+                <Divider />
             </CardContent>
-            {props.description ? (
-                <CardContent>
-                    <Typography variant="body1" color="initial">
-                        <em>{props.description}</em>
-                    </Typography>
-                </CardContent>
-            ) : null}
+            <CardContent>
+                <Typography variant="body1" color="initial">
+                    <em>{props.description}</em>
+                </Typography>
+            </CardContent>
             {props.rule ? (
                 <CardContent>
+                    <Divider />
                     <Typography variant="body1" color="initial">
                         {props.rule}
                     </Typography>
