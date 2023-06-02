@@ -1,6 +1,15 @@
 import { createTheme } from '@mui/material';
 
 const theme = createTheme({
+    components: {
+        MuiCardContent: {
+            styleOverrides: {
+                root: {
+                    paddingBottom: 0,
+                }
+            }
+        }
+    },
     palette: {
         mode: 'light',
         primary: {
