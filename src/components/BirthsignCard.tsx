@@ -42,8 +42,8 @@ const BirthsignCard = (props: BirthsignArchetypeProps) => {
                 <Divider />
             </CardContent>
             <CardContent>
-                <Typography variant="body1" color="initial">
-                    <em>{props.description}</em>
+                <Typography variant="body2" color="initial">
+                    {props.description}
                 </Typography>
             </CardContent>
             {props.rule ? (

@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from '@mui/material';
 
 const theme = createTheme({
     palette: {
@@ -13,12 +13,31 @@ const theme = createTheme({
             paper: '#f7eedf',
         },
     },
-    typography: {
-        fontFamily: [
-            'Vollkorn SC',
-            'sans-serif'
-        ].join(','),
-    }
 });
+
+theme.typography.h2 = {
+    fontSize: '1.5rem',
+    fontFamily: ['Vollkorn SC', 'sans-serif'].join(','),
+    [theme.breakpoints.up('md')]: {
+        fontSize: '3.75rem',
+    },
+};
+
+theme.typography.h3 = {
+    fontSize: '1.25rem',
+    fontFamily: ['Vollkorn SC', 'sans-serif'].join(','),
+    [theme.breakpoints.up('md')]: {
+        fontSize: '3rem',
+    },
+};
+
+theme.typography.body2 = {
+    fontSize: '.75rem',
+    fontStyle: 'italic',
+    fontFamily: ['Vollkorn', 'sans-serif'].join(','),
+    [theme.breakpoints.up('md')]: {
+        fontSize: '1rem',
+    },
+};
 
 export default theme;

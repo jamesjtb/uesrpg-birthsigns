@@ -2,6 +2,13 @@ import '@fontsource/vollkorn-sc/400.css';
 import '@fontsource/vollkorn-sc/600.css';
 import '@fontsource/vollkorn-sc/700.css';
 import '@fontsource/vollkorn-sc/900.css';
+import '@fontsource/vollkorn/400.css';
+import '@fontsource/vollkorn/500.css';
+import '@fontsource/vollkorn/600.css';
+import '@fontsource/vollkorn/700.css';
+import '@fontsource/vollkorn/800.css';
+import '@fontsource/vollkorn/900.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
