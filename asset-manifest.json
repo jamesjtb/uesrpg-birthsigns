@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/uesrpg-birthsigns/static/css/main.75392c15.css",
-    "main.js": "/uesrpg-birthsigns/static/js/main.e3e29b07.js",
+    "main.js": "/uesrpg-birthsigns/static/js/main.16a03b6f.js",
     "static/js/787.f205b07f.chunk.js": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js",
     "static/media/background.jpg": "/uesrpg-birthsigns/static/media/background.140dff8d0db9663d8299.jpg",
+    "static/media/mage.jpg": "/uesrpg-birthsigns/static/media/mage.0544ab34f879e9da9199.jpg",
+    "static/media/warrior.jpg": "/uesrpg-birthsigns/static/media/warrior.c4382705d8c36c3a3b70.jpg",
     "static/media/thief.jpg": "/uesrpg-birthsigns/static/media/thief.569759beb5575c608829.jpg",
-    "static/media/mage.jpg": "/uesrpg-birthsigns/static/media/mage.f2d02ae3c7a8a9be27a8.jpg",
-    "static/media/warrior.jpg": "/uesrpg-birthsigns/static/media/warrior.0eb510180b23ef3bc961.jpg",
     "static/media/vollkorn-sc-latin-ext-900-normal.woff2": "/uesrpg-birthsigns/static/media/vollkorn-sc-latin-ext-900-normal.2d814b294cdac78c5b6b.woff2",
     "static/media/vollkorn-sc-latin-ext-700-normal.woff2": "/uesrpg-birthsigns/static/media/vollkorn-sc-latin-ext-700-normal.82606c50953f8ca6cbfc.woff2",
     "static/media/vollkorn-sc-latin-ext-400-normal.woff2": "/uesrpg-birthsigns/static/media/vollkorn-sc-latin-ext-400-normal.77666f6c2adc33b282f1.woff2",
@@ -49,11 +49,11 @@
     "static/media/vollkorn-sc-vietnamese-400-normal.woff": "/uesrpg-birthsigns/static/media/vollkorn-sc-vietnamese-400-normal.708457cb928604c58c0d.woff",
     "index.html": "/uesrpg-birthsigns/index.html",
     "main.75392c15.css.map": "/uesrpg-birthsigns/static/css/main.75392c15.css.map",
-    "main.e3e29b07.js.map": "/uesrpg-birthsigns/static/js/main.e3e29b07.js.map",
+    "main.16a03b6f.js.map": "/uesrpg-birthsigns/static/js/main.16a03b6f.js.map",
     "787.f205b07f.chunk.js.map": "/uesrpg-birthsigns/static/js/787.f205b07f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.75392c15.css",
-    "static/js/main.e3e29b07.js"
+    "static/js/main.16a03b6f.js"
   ]
 }
