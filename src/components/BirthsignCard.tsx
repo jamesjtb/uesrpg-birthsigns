@@ -31,6 +31,8 @@ const BirthsignCard = (props: BirthsignCardProps) => {
                     transform: 'translate3D(0,-1px,0) scale(1.03)',
                     transition: 'all .2s ease',
                 },
+                maxWidth: '500px',
+                maxHeight: '1000px',
                 ...props.sx,
             }}
         >

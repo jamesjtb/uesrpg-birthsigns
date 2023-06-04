@@ -26,7 +26,7 @@ const theme = createTheme({
 
 theme.typography.h2 = {
     fontSize: '1.5rem',
-    fontFamily: ['Vollkorn SC', 'sans-serif'].join(','),
+    fontFamily: ['Vollkorn SC', 'serif'].join(','),
     [theme.breakpoints.up('md')]: {
         fontSize: '3.75rem',
     },
@@ -34,16 +34,25 @@ theme.typography.h2 = {
 
 theme.typography.h3 = {
     fontSize: '1.25rem',
-    fontFamily: ['Vollkorn SC', 'sans-serif'].join(','),
+    fontFamily: ['Vollkorn SC', 'serif'].join(','),
     [theme.breakpoints.up('md')]: {
         fontSize: '2.5rem',
     },
 };
 
+theme.typography.body1 = {
+    fontSize: '.75rem',
+    fontFamily: ['Vollkorn', 'serif'].join(','),
+    [theme.breakpoints.up('md')]: {
+        fontSize: '1rem',
+    },
+    paddingTop: '1em',
+};
+
 theme.typography.body2 = {
     fontSize: '.75rem',
     fontStyle: 'italic',
-    fontFamily: ['Vollkorn', 'sans-serif'].join(','),
+    fontFamily: ['Vollkorn', 'serif'].join(','),
     [theme.breakpoints.up('md')]: {
         fontSize: '1rem',
     },
