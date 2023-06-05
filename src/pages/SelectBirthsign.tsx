@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ContentCard from '../components/ContentCard';
+import ContentBox from '../components/ContentBox';
 import { Typography, Grid } from '@mui/material';
 import BirthsignCard from '../components/BirthsignCard';
 import birthsignArchetypes, { BirthsignArchetype } from '../data/birthsign-archetypes';
@@ -38,11 +38,11 @@ const SelectBirthsign = () => {
 
     return (
         <>
-            <ContentCard>
-                <Typography variant="h2">Choose Your Birthsign Archetype</Typography>
+            <ContentBox>
+                <Typography variant="h2" color="white">Choose Your Birthsign Archetype</Typography>
                 <Grid container spacing={3}>
                     {birthsignArchetypes.map(bsa => (
-                        <Grid item xs={12} md={4} key={bsa.key}>
+                        <Grid item xs={12} lg={4} key={bsa.key}>
                             <BirthsignCard
                                 img={bsa.img}
                                 displayName={bsa.displayName}
@@ -53,15 +53,23 @@ const SelectBirthsign = () => {
                         </Grid>
                     ))}
                 </Grid>
-            </ContentCard>
-            {rolledBirthsign.birthsign ? (
-                <BirthsignCard
-                    img={rolledBirthsign.birthsign.img}
-                    displayName={rolledBirthsign.starCursed ? `Star-Cursed ${rolledBirthsign.birthsign.displayName}` : rolledBirthsign.birthsign.displayName}
-                    description={rolledBirthsign.birthsign.description}
-                    rule={rolledBirthsign.starCursed ? rolledBirthsign.birthsign.starCursedRule : rolledBirthsign.birthsign.rule}
-                />
-            ) : null}
+                {rolledBirthsign.birthsign ? (
+                    <BirthsignCard
+                        img={rolledBirthsign.birthsign.img}
+                        displayName={
+                            rolledBirthsign.starCursed
+                                ? `Star-Cursed ${rolledBirthsign.birthsign.displayName}`
+                                : rolledBirthsign.birthsign.displayName
+                        }
+                        description={rolledBirthsign.birthsign.description}
+                        rule={
+                            rolledBirthsign.starCursed
+                                ? rolledBirthsign.birthsign.starCursedRule
+                                : rolledBirthsign.birthsign.rule
+                        }
+                    />
+                ) : null}
+            </ContentBox>
         </>
     );
 };
