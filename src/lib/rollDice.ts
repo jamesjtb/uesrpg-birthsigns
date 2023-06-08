@@ -1,4 +1,3 @@
-import { injectable } from 'inversify';
 import { DiceRoll } from '@dice-roller/rpg-dice-roller';
 
 function rollDice(diceNotation: string): number {
