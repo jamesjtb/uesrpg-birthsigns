@@ -1,5 +1,5 @@
 const TYPES = {
-    iRollDice: Symbol.for('iRollDice'),
+    IDiceRoller: Symbol.for('IDiceRoller'),
 };
 
 export default TYPES;
