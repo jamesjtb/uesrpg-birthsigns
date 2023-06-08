@@ -5,7 +5,7 @@ import BirthsignCard from '../components/BirthsignCard';
 import birthsignArchetypes, { BirthsignArchetype } from '../data/birthsign-archetypes';
 import birthsigns, { Birthsign } from '../data/birthsigns';
 import { useInjection } from 'inversify-react';
-import IDice from '../interfaces/IDice';
+import iRollDice from '../interfaces/iRollDice';
 import TYPES from '../types';
 
 interface RolledBirthsignState {
@@ -19,11 +19,11 @@ const SelectBirthsign = () => {
         starCursed: false,
     });
 
-    const dice: IDice = useInjection(TYPES.IDiceRoller);
-
+    const rollDice: iRollDice = useInjection(TYPES.iRollDice);
+    
     const rollForBirthsign = (archetype: BirthsignArchetype, starCursed = false): void => {
 
-        const rollResult = dice.roll('1d5');
+        const rollResult = rollDice('1d5');
 
         if (rollResult === 5) {
             console.log(`Rolled a ${rollResult}, rerolling for a Star-Cursed sign.`);

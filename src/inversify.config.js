@@ -1,9 +1,9 @@
 import {Container} from 'inversify';
 import TYPES from './types';
-import DiceRoller from './lib/Dice';
+import rollDice from './lib/rollDice';
 
 const container = new Container();
 
-container.bind(TYPES.IDiceRoller).to(DiceRoller);
+container.bind(TYPES.iRollDice).toConstantValue(rollDice);
 
 export default container;
