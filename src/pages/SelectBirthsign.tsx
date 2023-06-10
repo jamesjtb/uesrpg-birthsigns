@@ -52,9 +52,12 @@ const SelectBirthsign = () => {
                     {birthsignArchetypes.map(bsa => (
                         <Grid item xs={12} lg={4} key={bsa.key}>
                             <BirthsignCard
-                                img={bsa.img}
-                                displayName={bsa.displayName}
-                                description={bsa.description}
+                                birthsign={{
+                                    description: bsa.description,
+                                    displayName: bsa.displayName,
+                                    img: bsa.img,
+                                    key: bsa.key
+                                }}
                                 onClick={() => rollForBirthsign(bsa)}
                                 sx={{ maxWidth: '100%', minHeight: '100%' }}
                             />
@@ -63,18 +66,8 @@ const SelectBirthsign = () => {
                 </Grid>
                 {rolledBirthsign.birthsign ? (
                     <BirthsignCard
-                        img={rolledBirthsign.birthsign.img}
-                        displayName={
-                            rolledBirthsign.starCursed
-                                ? `Star-Cursed ${rolledBirthsign.birthsign.displayName}`
-                                : rolledBirthsign.birthsign.displayName
-                        }
-                        description={rolledBirthsign.birthsign.description}
-                        rule={
-                            rolledBirthsign.starCursed
-                                ? rolledBirthsign.birthsign.starCursedRule
-                                : rolledBirthsign.birthsign.rule
-                        }
+                        starCursed={rolledBirthsign.starCursed}
+                        birthsign={rolledBirthsign.birthsign}
                     />
                 ) : null}
             </ContentBox>

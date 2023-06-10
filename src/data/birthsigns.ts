@@ -16,8 +16,8 @@ export interface Birthsign {
     displayName: string;
     key: string;
     description: string;
-    rule: string;
-    starCursedRule: string;
+    rule?: string;
+    starCursedRule?: string;
 }
 
 const birthsigns: Birthsign[] = [

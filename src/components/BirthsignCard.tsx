@@ -4,21 +4,21 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Divider from '@mui/material/Divider';
 import React, { MouseEventHandler } from 'react';
+import { Birthsign } from '../data/birthsigns';
+import { BirthsignArchetype } from '../data/birthsign-archetypes';
 
 interface BirthsignCardProps {
     onClick?: MouseEventHandler<HTMLDivElement>;
-    img: string;
-    displayName: string;
-    description?: string;
-    rule?: string;
+    birthsign: Birthsign;
+    starCursed?: boolean;
     sx?: SxProps;
 }
 
-const BirthsignCard = (props: BirthsignCardProps) => {
+const BirthsignCard = ({onClick, birthsign, starCursed, sx}: BirthsignCardProps) => {
     return (
         <Card
             elevation={9}
-            onClick={props.onClick}
+            onClick={onClick}
             sx={{
                 cursor: 'pointer',
                 width: 'fit-content',
@@ -33,26 +33,26 @@ const BirthsignCard = (props: BirthsignCardProps) => {
                 },
                 maxWidth: '500px',
                 maxHeight: '1000px',
-                ...props.sx,
+                ...sx,
             }}
         >
-            <CardMedia component="img" image={props.img} alt={props.displayName} />
+            <CardMedia component="img" image={birthsign.img} alt={birthsign.displayName} />
             <CardContent>
                 <Typography variant="h3" color="primary">
-                    The {props.displayName}
+                    The {birthsign.displayName}
                 </Typography>
                 <Divider />
             </CardContent>
             <CardContent>
                 <Typography variant="body2" color="initial">
-                    {props.description}
+                    {birthsign.description}
                 </Typography>
             </CardContent>
-            {props.rule ? (
+            {birthsign.rule || birthsign.starCursedRule ? (
                 <CardContent>
                     <Divider />
                     <Typography variant="body1" color="initial">
-                        {props.rule}
+                        {starCursed ? birthsign.starCursedRule : birthsign.rule}
                     </Typography>
                 </CardContent>
             ) : null}
