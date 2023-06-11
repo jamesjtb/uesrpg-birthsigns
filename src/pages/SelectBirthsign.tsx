@@ -19,7 +19,7 @@ const SelectBirthsign = () => {
         starCursed: false,
     });
 
-    const [selectedArchetypeCard, setSelectedArchetypeCard] = useState<EventTarget | null>(null);
+    // const [selectedArchetypeCard, setSelectedArchetypeCard] = useState<EventTarget | null>(null);
 
     const rollDice: iRollDice = useInjection(TYPES.iRollDice);
 
@@ -48,7 +48,7 @@ const SelectBirthsign = () => {
         birthsignArchetype: BirthsignArchetype
     ) => {
         rollForBirthsign(birthsignArchetype);
-        setSelectedArchetypeCard(e.target);
+        // setSelectedArchetypeCard(e.target);
     };
 
     return (
