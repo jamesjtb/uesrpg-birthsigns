@@ -68,7 +68,6 @@ const SelectBirthsign = () => {
                                     img: bsa.img,
                                     key: bsa.key,
                                 }}
-                                sx={{ maxWidth: '100%', minHeight: '100%' }}
                             />
                         </Grid>
                     ))}

@@ -32,6 +32,7 @@ const BirthsignCard = ({onClick, birthsign, starCursed, sx}: BirthsignCardProps)
                 },
                 maxWidth: '500px',
                 maxHeight: '1000px',
+                minHeight: '100%'
             }}
         >
             <CardMedia component="img" image={birthsign.img} alt={birthsign.displayName} />
