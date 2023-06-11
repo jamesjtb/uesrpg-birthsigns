@@ -5,7 +5,6 @@ import CardMedia from '@mui/material/CardMedia';
 import Divider from '@mui/material/Divider';
 import React, { MouseEventHandler } from 'react';
 import { Birthsign } from '../data/birthsigns';
-import { BirthsignArchetype } from '../data/birthsign-archetypes';
 
 interface BirthsignCardProps {
     onClick?: MouseEventHandler<HTMLDivElement>;
@@ -19,7 +18,7 @@ const BirthsignCard = ({onClick, birthsign, starCursed, sx}: BirthsignCardProps)
         <Card
             elevation={9}
             onClick={onClick}
-            sx={{
+            sx={sx ? sx : {
                 cursor: 'pointer',
                 width: 'fit-content',
                 transition: 'all .2s ease',
@@ -33,7 +32,6 @@ const BirthsignCard = ({onClick, birthsign, starCursed, sx}: BirthsignCardProps)
                 },
                 maxWidth: '500px',
                 maxHeight: '1000px',
-                ...sx,
             }}
         >
             <CardMedia component="img" image={birthsign.img} alt={birthsign.displayName} />

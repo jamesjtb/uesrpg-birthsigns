@@ -1,10 +1,10 @@
+import { Grid, Modal, Typography } from '@mui/material';
+import { useInjection } from 'inversify-react';
 import React, { useState } from 'react';
-import ContentBox from '../components/ContentBox';
-import { Typography, Grid } from '@mui/material';
 import BirthsignCard from '../components/BirthsignCard';
+import ContentBox from '../components/ContentBox';
 import birthsignArchetypes, { BirthsignArchetype } from '../data/birthsign-archetypes';
 import birthsigns, { Birthsign } from '../data/birthsigns';
-import { useInjection } from 'inversify-react';
 import iRollDice from '../interfaces/iRollDice';
 import TYPES from '../types';
 
@@ -19,10 +19,11 @@ const SelectBirthsign = () => {
         starCursed: false,
     });
 
-    const rollDice: iRollDice = useInjection(TYPES.iRollDice);
-    
-    const rollForBirthsign = (archetype: BirthsignArchetype, starCursed = false): void => {
+    const [selectedArchetypeCard, setSelectedArchetypeCard] = useState<EventTarget | null>(null);
 
+    const rollDice: iRollDice = useInjection(TYPES.iRollDice);
+
+    const rollForBirthsign = (archetype: BirthsignArchetype, starCursed = false): void => {
         const rollResult = rollDice('1d5');
 
         if (rollResult === 5) {
@@ -42,6 +43,14 @@ const SelectBirthsign = () => {
         });
     };
 
+    const onSelectArchetype = (
+        e: React.MouseEvent<HTMLDivElement, MouseEvent>,
+        birthsignArchetype: BirthsignArchetype
+    ) => {
+        rollForBirthsign(birthsignArchetype);
+        setSelectedArchetypeCard(e.target);
+    };
+
     return (
         <>
             <ContentBox>
@@ -52,23 +61,39 @@ const SelectBirthsign = () => {
                     {birthsignArchetypes.map(bsa => (
                         <Grid item xs={12} lg={4} key={bsa.key}>
                             <BirthsignCard
+                                onClick={e => onSelectArchetype(e, bsa)}
                                 birthsign={{
                                     description: bsa.description,
                                     displayName: bsa.displayName,
                                     img: bsa.img,
-                                    key: bsa.key
+                                    key: bsa.key,
                                 }}
-                                onClick={() => rollForBirthsign(bsa)}
                                 sx={{ maxWidth: '100%', minHeight: '100%' }}
                             />
                         </Grid>
                     ))}
                 </Grid>
                 {rolledBirthsign.birthsign ? (
-                    <BirthsignCard
-                        starCursed={rolledBirthsign.starCursed}
-                        birthsign={rolledBirthsign.birthsign}
-                    />
+                    <Modal
+                        open={true}
+                        onClose={() =>
+                            setRolledBirthsign({ birthsign: undefined, starCursed: false })
+                        }
+                    >
+                        <BirthsignCard
+                            starCursed={rolledBirthsign.starCursed}
+                            birthsign={rolledBirthsign.birthsign}
+                            sx={{
+                                position: 'absolute',
+                                top: '50%',
+                                left: '50%',
+                                transform: 'translate(-50%, -50%)',
+                                width: 'fit-content',
+                                maxWidth: '500px',
+                                maxHeight: '1000px',
+                            }}
+                        />
+                    </Modal>
                 ) : null}
             </ContentBox>
         </>
