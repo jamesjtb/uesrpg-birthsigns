@@ -38,7 +38,7 @@ const BirthsignCard = ({onClick, birthsign, starCursed, sx}: BirthsignCardProps)
             <CardMedia component="img" image={birthsign.img} alt={birthsign.displayName} />
             <CardContent>
                 <Typography variant="h3" color="primary">
-                    The {birthsign.displayName}
+                    The {starCursed ? 'Star-Cursed ' : ''}{birthsign.displayName}
                 </Typography>
                 <Divider />
             </CardContent>
