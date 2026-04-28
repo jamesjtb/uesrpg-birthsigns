@@ -1,4 +1,4 @@
-# UESRPG Birthsigns
+# [UESRPG Birthsigns](https://jamesjtb.github.io/uesrpg-birthsigns/)
 A very simple react app to "roll" a birthsign for character creation in the Unofficial Elder Scrols RPG, a community-built d100 TTRPG.
 
 ## Check out UESRPG:
