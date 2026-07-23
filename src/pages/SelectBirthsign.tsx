@@ -55,7 +55,7 @@ const SelectBirthsign = () => {
         <>
             <ContentBox>
                 <Typography variant="h2" color="white">
-                    Choose Your Birthsign Archetype
+                    Choose Your Charge!
                 </Typography>
                 <Grid container spacing={3}>
                     {birthsignArchetypes.map(bsa => (
